@@ -17,6 +17,52 @@
     <header class="text-center text-white hdr">
       <h1>Weather Dashboard</h1>
     </header>
+
+    <!--main section to house all the containers-->
+    <main>
+      <!---form for input/submit btn-->
+      <form>
+        <input type="text" placeholder="Enter a city name" />
+        <button class="btn btn-primary d-block" type="submit">Search</button>
+      </form>
+      <!--current weather-->
+      <div class="currentWeather card">
+        <h2>Current Weather:</h2>
+        <p id="temp">Temp:</p>
+        <p id="wind">Wind:</p>
+        <p id="humidity">Humidity:</p>
+        <p id="uvIndex">UV Index</p>
+      </div>
+      <!--5 day forecast-->
+      <section class="card-group">
+          <div class="card">
+        <h2>5-Day Forecast:</h2>
+        <p id="temp">Temp:</p>
+        <p id="wind">Wind:</p>
+        <p id="humidity">Humidity:</p>
+        <div>
+            <div class="card">
+                <p id="temp">Temp:</p>
+                <p id="wind">Wind:</p>
+                <p id="humidity">Humidity:</p>
+                <div>
+                    <div class="card">
+                        <p id="temp">Temp:</p>
+                        <p id="wind">Wind:</p>
+                        <p id="humidity">Humidity:</p>
+                        <div>
+                            <div class="card">
+                                <p id="temp">Temp:</p>
+                                <p id="wind">Wind:</p>
+                                <p id="humidity">Humidity:</p>
+                                <div>
+                                    <div class="card">
+                                        <p id="temp">Temp:</p>
+                                        <p id="wind">Wind:</p>
+                                        <p id="humidity">Humidity:</p>
+                                        <div>
+      </section>
+    </main>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
