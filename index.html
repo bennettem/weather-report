@@ -21,48 +21,62 @@
     <!--main section to house all the containers-->
     <main>
       <!---form for input/submit btn-->
-      <form>
-        <input type="text" placeholder="Enter a city name" />
-        <button class="btn btn-primary d-block" type="submit">Search</button>
-      </form>
+      <div class="col-4 float-left">
+        <form>
+          <input type="text" placeholder="Enter a city name" id="citySearch" />
+          <button class="btn btn-primary d-block" id="searchBtn" type="submit">Search</button>
+        </form>
+        <!--history form-->
+        <form id="searchHistory"></form>
+      </div>
       <!--current weather-->
-      <div class="currentWeather card">
+      <div class="container">
+      <div class="currentWeather card" id="currentWeather">
+          <div class="vstack gap 3">
         <h2>Current Weather:</h2>
         <p id="temp">Temp:</p>
         <p id="wind">Wind:</p>
         <p id="humidity">Humidity:</p>
         <p id="uvIndex">UV Index</p>
       </div>
+    </div>
       <!--5 day forecast-->
-      <section class="card-group">
-          <div class="card">
-        <h2>5-Day Forecast:</h2>
-        <p id="temp">Temp:</p>
-        <p id="wind">Wind:</p>
-        <p id="humidity">Humidity:</p>
-        <div>
-            <div class="card">
-                <p id="temp">Temp:</p>
-                <p id="wind">Wind:</p>
-                <p id="humidity">Humidity:</p>
-                <div>
-                    <div class="card">
-                        <p id="temp">Temp:</p>
-                        <p id="wind">Wind:</p>
-                        <p id="humidity">Humidity:</p>
-                        <div>
-                            <div class="card">
-                                <p id="temp">Temp:</p>
-                                <p id="wind">Wind:</p>
-                                <p id="humidity">Humidity:</p>
-                                <div>
-                                    <div class="card">
-                                        <p id="temp">Temp:</p>
-                                        <p id="wind">Wind:</p>
-                                        <p id="humidity">Humidity:</p>
-                                        <div>
+      <div class="container">
+      <section class="card-group fiveDay">
+        <div class="row" id="fiveDay">
+          <h2 class="card-title">5-Day Forecast:</h2>
+          <div class="card bg-primary">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+          </div>
+          <div class="card bg-primary">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+          </div>
+          <div class="card bg-primary">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+          </div>
+          <div class="card bg-primary">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+          </div>
+          <div class="card bg-primary">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+          </div>
+        </div>
+    </div>
+      </div>
       </section>
     </main>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </body>
 </html>
